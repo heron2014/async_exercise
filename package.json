@@ -1,0 +1,11 @@
+{
+  "name": "async_exercise",
+  "version": "1.0.0",
+  "description": "Practising asynchronous programming ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "heron2014",
+  "license": "ISC"
+}
