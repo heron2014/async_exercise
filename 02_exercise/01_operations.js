@@ -11,10 +11,8 @@ module.exports = function composeCalls(args, cb) {
         }));
     }));
 
-
-// handlingError returns a function which gets invoke with an err which is pointing to our original cb (composeCalls(cb))
-// otherwise it calls continuation function (fn) which is function(result) -->
-// in calls(args, handlingError(function(result) {...}))
+// handlingError is a wrapper of cb function, which takes err and results as parameter
+// if there is an error it takes care of err otherwise it calls continuation fn with our results
     function handlingError(fn) {
         return function (err, results) {
             if (err) {

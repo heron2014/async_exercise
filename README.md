@@ -33,11 +33,11 @@ This exercise aim is to analyze how we can manage operations that happens in par
 #### 01_operations.js
 Coordinating parallel operations (None of these operations depends on previous one)
 
-#### client.js
-client.js invokes our module 01_operations.js
+#### client01.js
+client01.js invokes our module 01_operations.js
 
 Run this example by typing: 
-```node client.js ```
+```node client01.js ```
 
 #### 02_operations.js
 Paralallising the calls (make them depend on previous one). Call1, call2, call3 might finish on different time but what 
